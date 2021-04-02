@@ -1,0 +1,9 @@
+<input type="text" class="form-control" [(ngModel)]="updateName" />
+<p>Questo è il tuo nome: {{ updateName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="updateName === ''"
+  (click)="resetName()"
+>
+  Reset
+</button>
